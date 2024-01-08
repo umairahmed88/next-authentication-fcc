@@ -27,6 +27,8 @@ export const options = {
 			profile(profile) {
 				console.log("Profile Google:", profile);
 
+				let userRole = "Google User";
+
 				return {
 					...profile,
 					id: profile.sub,
