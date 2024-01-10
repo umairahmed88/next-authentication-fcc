@@ -1,6 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
+import { useState } from "react";
 
 const UserForm = () => {
 	const router = useRouter();
@@ -17,6 +18,7 @@ const UserForm = () => {
 	};
 
 	const handleSubmit = async (e) => {
+		useState;
 		e.preventDefault();
 		setErrorMessage("");
 		const res = await fetch("/api/Users", {
